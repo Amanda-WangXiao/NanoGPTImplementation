@@ -5,12 +5,12 @@ A minimal GPT implementation in PyTorch. It trains a character-level language mo
 
 ## Common Commands(For Mac M chips)
 python data/shakespeare_char/prepare.py  
-python train.py --device=mps --compile=False --dtype=float32
-python train.py --device=mps --compile=False --dtype=float32 --init_from=resume
-python train.py --device=mps --compile=False --dtype=float32 --max_iters=2000 --lr_decay_iters=2000 --eval_interval=100
-python sample.py --device=mps
-python sample.py --device=mps --start="ROMEO:" --num_samples=3 --max_new_tokens=300
+python train.py --device=mps --compile=False --dtype=float32  
+python train.py --device=mps --compile=False --dtype=float32 --init_from=resume  
+python train.py --device=mps --compile=False --dtype=float32 --max_iters=2000 --lr_decay_iters=2000 --eval_interval=100  
+python sample.py --device=mps  
+python sample.py --device=mps --start="ROMEO:" --num_samples=3 --max_new_tokens=300  
 
 ## Original Git Repo
-I am deeply grateful to the original author for contributing his code; my development is based on his repository. Please refer to the link below to visit the original author's repository:
-link[https://github.com/karpathy/nanoGPT]
+I am deeply grateful to the original author for contributing his code; my development is based on his repository. Please refer to the link below to visit the original author's repository:  
+[https://github.com/karpathy/nanoGPT]
